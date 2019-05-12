@@ -1,0 +1,246 @@
+﻿
+
+/*//////////////////////////////////////////////////////////////////
+[ REBOOT ]*/
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('Login/fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+
+/*---------------------------------------------*/
+a:focus {outline: none;}
+a:hover {text-decoration: none;}
+
+/*---------------------------------------------*/
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+.p-t-34, .p-tb-34, .p-all-34 {padding-top: 34px;}
+
+.p-t-80, .p-tb-80, .p-all-80 {padding-top: 80px;}
+
+
+.p-b-4, .p-tb-4, .p-all-4 {padding-bottom: 4px;}
+
+.p-b-8, .p-tb-8, .p-all-8 {padding-bottom: 8px;}
+
+.p-b-30, .p-tb-30, .p-all-30 {padding-bottom: 30px;}
+
+.p-b-50, .p-tb-50, .p-all-50 {padding-bottom: 50px;}
+
+.p-b-31, .p-tb-31, .p-all-31 {padding-bottom: 31px;}
+
+.p-b-34, .p-tb-34, .p-all-34 {padding-bottom: 34px;}
+
+
+
+
+
+.p-l-38, .p-lr-38, .p-all-38 {padding-left: 38px;}
+
+
+.p-r-38, .p-lr-38, .p-all-38 {padding-right: 38px;}
+
+
+.cl0 {color: #fff;}
+
+.m-l-auto {margin-left: auto;}
+.m-r-auto {margin-right: auto;}
+.m-lr-auto {margin-left: auto; margin-right: auto;}
+
+
+
+[ TEXT ]*/
+.clwhite {color: white;}
+.clblack {color: black;}
+
+/*------------------------------------------------------------------
+
+/* ------------------------------------ */
+.txt-center {text-align: center;}
+.txt-left {text-align: left;}
+.txt-right {text-align: right;}
+.txt-middle {vertical-align: middle;}
+
+
+
+/*//////////////////////////////////////////////////////////////////
+[ SIZE ]*/
+
+.s-full {width: 100%; height: 100%;}
+.wrap-pic-s,
+.wrap-pic-max-s,
+.wrap-pic-w,
+.wrap-pic-max-w,
+.wrap-pic-h,
+.wrap-pic-max-h {
+	display: block;
+}
+
+.wrap-pic-w img {width: 100%;}
+
+
+
+/*------------------------------------------------------------------
+[ Transition ]*/
+
+.trans-03 {
+	-webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.trans-04 {
+	-webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.trans-05 {
+	-webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.trans-09 {
+	-webkit-transition: all 0.9s;
+    -o-transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    transition: all 0.9s;
+}
+.flex-col-l,
+.flex-col-l-sb
+{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.flex-w {
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+
+
+.flex-col-l-sb {
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: flex-start;
+}
+
+
+
+
+.flex-col-l,
+.flex-col-l-sb,
+.flex-col {
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+}
+
+.ab-t-l {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.ltext-102 {
+  font-family: Montserrat-Bold;
+  font-size: 28px;
+  line-height: 1.1;
+  opacity: 0
+}
+.stext-102 {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0
+}
+.block1-info {color: #555;}
+.block1-txt:hover .block1-name,
+.block1-txt:hover .block1-info {
+  color: #fff;
+  opacity : 1
+}
+.block1 {
+  position: relative;
+  border: 1px solid #e6e6e6;
+}
+
+.block1-txt {
+  background-color: rgba(103,117,214,0.0);
+}
+
+/*---------------------------------------------*/
+.block1-name {color: #333;}
+
+/*---------------------------------------------*/
+.block1-txt-child2 {
+  border-bottom: 2px solid #fff;
+  overflow: hidden;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.block1-link {
+  -webkit-transform: translateY(250%);
+  -moz-transform: translateY(250%);
+  -ms-transform: translateY(250%);
+  -o-transform: translateY(250%);
+  transform: translateY(250%);
+}
+
+/*---------------------------------------------*/
+.block1-txt:hover {
+  background-color: rgba(103,117,214,0.8);
+}
+
+.block1-txt:hover .block1-txt-child2 {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.block1-txt:hover .block1-link {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

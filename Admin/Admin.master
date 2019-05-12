@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<%@ Register Src="UC/ucSideBar.ascx" TagName="ucSideBar" TagPrefix="uc1" %>
+
+<%@ Register src="UC/ucNavbar.ascx" tagname="ucNavbar" tagprefix="uc2" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="../Scripts/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../Scripts/css/Admin.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <uc2:ucNavbar ID="ucNavbar1" runat="server" />
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                    
+                         <uc1:ucSideBar ID="ucSideBar1" runat="server" />
+                </div>
+                    <div class="col-lg-9">
+                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>

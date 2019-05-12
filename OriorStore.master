@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="OriorStore.master.cs" Inherits="OriorStore" %>
+
+<%@ Register Src="UC/ucNavbar.ascx" TagName="ucNavbar" TagPrefix="uc1" %>
+
+<%@ Register Src="UC/ucFooter.ascx" TagName="ucFooter" TagPrefix="uc2" %>
+
+<%@ Register src="UC/ucSidebar.ascx" tagname="ucSidebar" tagprefix="uc3" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Scripts/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/css/animate.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <uc1:ucNavbar ID="ucNavbar1" runat="server" />
+        </nav>
+        <uc3:ucSidebar ID="ucSidebar1" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <article>
+            <div class="sc-CtfFt gonsongnguoc">
+                <div class="sc-bdVaJa fillcolor">
+                    <svg width="100%" height="150px" fill="none">
+                        <path class="" fill="white" d="M 0 64.1342 C 322.687 99.0008 586.929 2.99691 912.587 33.4508 C 1238.25 63.9048 1307.95 71.1445 1440 64.1342 V 356.134 H 0 V 64.1342 Z">
+                            <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="2s" values="M0 95.654C277.431 -69.1705 408 11.654 720 95.654C1032 179.654 1207.5 144.328 1440 95.654V387.654H0V95.654Z; M0 51.8168C277 169.163 433 131.471 720 51.8168C1007 -27.8372 1199 -5.83717 1440 51.8168V343.817H0V51.8168Z; M0 69.3411C342 69.3411 652 -51.313 994 25.687C1336 102.687 1354 103.687 1440 69.3411V361.341H0V69.3411Z; M0 95.654C277.431 -69.1705 408 11.654 720 95.654C1032 179.654 1207.5 144.328 1440 95.654V387.654H0V95.654Z&nbsp; "></animate>
+                        </path></svg>
+                </div>
+            </div>
+        </article>
+        <uc2:ucFooter ID="ucFooter1" runat="server" />
+        <script src="Scripts/js/jquery-3.2.1.min.js"></script>
+        <script src="Scripts/js/jquery.easing.min.js"></script>
+        <script src="Scripts/js/bootstrap.min.js"></script>
+        <script src="Scripts/js/rior.js"></script>
+        <script src="Scripts/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    </form>
+</body>
+</html>
